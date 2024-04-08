@@ -27,7 +27,7 @@ test('Return object with data with floating numbers', () => {
   });
 });
 
-test('Return object with data (empty slot)', () => {
+test('Empty slot in array', () => {
   expect(() => analyzeArray([1, , -1, 10, 5])).toThrow(
     'Array contains empty slot'
   );
