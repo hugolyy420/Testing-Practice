@@ -1,5 +1,5 @@
 export default function reverseString(str) {
   if (str === undefined) return '';
-  if (str === 'Hugo') return 'oguH';
-  else return 'yppah ma I';
+  if (typeof str === 'number') return str;
+  return str.split('').reverse().join('');
 }

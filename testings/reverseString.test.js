@@ -11,3 +11,11 @@ test('Reverse string of more than one word', () => {
 test('Return empty string if no input', () => {
   expect(reverseString()).toBe('');
 });
+
+test('Reverse string with numbers and symbols', () => {
+  expect(reverseString('@12 *(')).toBe('(* 21@');
+});
+
+test('Return original input if the input is a number', () => {
+  expect(reverseString(123)).toBe(123);
+});
